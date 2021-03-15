@@ -1,0 +1,125 @@
+.link-shorten {
+    background-image: url('./../images/bg-shorten-desktop.svg');
+    padding: 54px 60px;
+    background-size: cover;
+    background-color: $Dark-Violet;
+    border-radius: 10px;
+    transform: translateY(50%);
+    margin-top: -15px;
+
+    input,
+    button {
+        padding: 15px;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    button {
+        transition: .2s linear;
+        &.loading,
+        &:disabled {
+            cursor: not-allowed!important;
+        }
+
+        &:hover {
+            &:hover {
+                background-color: lighten($primary, 30%);
+            }
+        }
+    }
+
+    small {
+        position: absolute;
+        font-size: .7rem;
+    }
+
+}
+
+.boost-your-links {
+    background-image: url('./../images/bg-boost-desktop.svg');
+    padding: 65px 0;
+    background-size: cover;
+    background-color: $Dark-Violet;
+    background-attachment: fixed;
+    text-align: center;
+    h2 {
+        margin-bottom: 40px;
+    }
+}
+
+
+.advanced-statistics {
+    padding: 140px 0 120px;
+    background-color: $bg-medium-grey;
+    .centerpiece {
+        text-align: center;
+        h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        p {
+            margin: 0 auto;
+            max-width: 485px;
+            color: $text-color-dark;
+        }
+    }
+
+    .card {
+        padding: 30px 30px 40px;
+        padding-top: 80px;
+        margin-top: 100px;
+        &:hover {
+            .card-icon {
+                transform: rotate(360Deg);
+                transition: 0.4s cubic-bezier(1, -0.31, 0.05, 0.71);
+            }
+        }
+
+        .card-icon {
+            height: 86px;
+            width: 86px;
+            border-radius: 50%;
+            background-color: $Dark-Violet;
+            position: absolute;
+            top: -40px;
+            left: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: none;
+        }
+
+        .card-title {
+            color: $Dark-Violet;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 18px;
+        }
+        p {
+            color: $text-color;
+            font-size: .8rem;
+            margin: 0;
+            line-height: 1.4rem;
+        }
+    }
+
+    .card-graph > div {
+
+        &:nth-child(2) .card {
+            margin-top: 145px;
+        }
+        &:nth-child(3) .card {
+            margin-top: 185px;
+        }
+    }
+
+    .cyan-stick {
+        position: relative;
+        height: 10px;
+        width: 80%;
+        background: $primary;
+        top: 388px;
+        margin: 0 auto;
+    }
+}

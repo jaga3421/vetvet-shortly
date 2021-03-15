@@ -1,0 +1,46 @@
+button.loading {
+    background-image: 
+      repeating-linear-gradient(
+        -45deg, 
+        transparent, 
+        transparent 1rem,
+        #ffffff30 1rem,
+        #ffffff30 2rem
+      );
+    background-size: 200% 200%;
+    animation: barberpole 6s linear infinite;
+  }
+
+  div.colorFlash {
+    animation-name: colorFlash;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+  }
+
+  // keyframes
+
+  // button stripe animation
+  
+  @keyframes barberpole {
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+
+  // color flash
+  @keyframes colorFlash {
+    0% {
+        background-color:$primary;
+        opacity:1;
+    }
+    22% {
+        background-color: $light;
+    }
+    77% {
+        background-color: $primary;
+    }
+    100% {
+        background-color:$light;
+    }
+}

@@ -1,0 +1,36 @@
+$font-family-base: 'Poppins'!important;
+$font-size-root: 18px!default;
+$font-light: 500;
+$font-strong: 700;
+:root {
+    font-size: 18px;
+}
+
+// color map
+$Cyan: hsl(180, 66%, 49%);
+$Dark-Violet: hsl(257, 27%, 26%);
+$Red: hsl(0, 87%, 67%);
+$Gray: hsl(0, 0%, 75%);
+$Grayish-Violet: hsl(257, 7%, 63%);
+$Very-Dark-Blue: hsl(255, 11%, 22%);
+$Very-Dark-Violet: hsl(260, 8%, 14%);
+
+// boostrap beak points
+$grid-breakpoints: (
+    xs: 0,
+    sm: 375px,
+    md: 768px,
+    lg: 1440px,
+)!default;
+
+$light: #fff;
+$primary: $Cyan;
+$primary-dark: $Dark-Violet;
+$text-color: $Gray;
+$text-color-dark: darken($text-color, 20%);
+$text-dark: $Dark-Violet;
+$bg-medium-grey: #F0F1F6;
+
+// dimensions 
+$navbar-nav-link-padding-x: 1.3rem;
+$navbar-light-color: $text-color;

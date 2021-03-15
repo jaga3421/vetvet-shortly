@@ -1,0 +1,30 @@
+.text-box {
+
+    input {
+        width: 100%;
+        outline: none;
+    }
+
+    label {
+        position: absolute;
+        font-size: 1rem;
+        transition: .2s ease;
+        left: 5%;
+        top: 23%;
+        pointer-events: none;
+    }
+
+    &.has-errors {
+        input {
+            border-color: red;
+        }
+    }
+
+    &.is-label-up {
+        label {
+            top: 5px; 
+            left: 4%!important;
+            font-size: 0.6rem;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+<button 
+    class = {{
+        concat "btn btn-primary " (if this.copied "btn-secondary")
+    }}
+    {{on 'click' (fn this.copyToClipBoard @text) }}
+>
+    {{if this.copied 'Copied!' 'Copy' }}
+</button>

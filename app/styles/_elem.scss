@@ -1,0 +1,54 @@
+.strong {
+    font-weight: $font-strong;
+}
+
+a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: .2s linear;
+    &:hover {
+        text-decoration: none;
+    }
+
+    &.btn-style {
+        color: $light!important;
+        background-color: $primary;
+        border-radius: 100px;
+        &:hover {
+            background-color: lighten($primary, 30%);
+        }
+    }
+
+    &.lg {
+        font-size: 1.2rem;
+        padding: 0.7rem 2rem;
+        font-weight: 500;
+    }
+    @extend .strong;
+}
+
+header {
+    margin-top: 50px;
+}
+
+img {
+    &.max-auto {
+        max-width: 100%;
+    }
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.btn-primary {
+    color: $light;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+.no-overflow-x {
+    overflow-x: hidden;
+}

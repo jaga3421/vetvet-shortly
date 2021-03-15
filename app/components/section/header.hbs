@@ -1,0 +1,31 @@
+<!-- header -->
+<header>
+    <nav class="navbar navbar-expand-md navbar-light container">
+        <a class="navbar-brand" >
+            <LinkTo @route="index">
+                <img src="./images/logo.svg" alt="logo" class="max-auto" />
+            </LinkTo>
+        </a>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                {{#each @content.main-nav as |link|}}
+                    <li class="nav-item">
+                        <a class="nav-link primary" href={{link.url}}>{{link.name}}</a>
+                    </li>
+                {{/each}}
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+
+                {{#each @content.right-nav as |link|}}
+                    <li class="nav-item ml-auto">
+                        <a class={{concat link.style " nav-link"}} href={{link.url}}>{{link.name}}</a>
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
+        </nav>
+</header>
+
+

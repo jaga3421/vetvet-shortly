@@ -1,0 +1,39 @@
+ <!-- pre footer cta -->
+<div class="pre-footer">
+    <div class="boost-your-links text-light">
+        <h2>{{@content.boost-today}}</h2>
+        <a href="#" class="btn-style lg">{{@content.get-started}}</a>
+    </div>
+</div>
+
+<!-- footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-12 col-sm-12 footer-logo">
+                <h2 class="strong">Shortly</h2>
+            </div>
+            
+            {{#each @content.footer-links as |footer-link|}}
+                <div class="col-lg-2 col-md-3 col-sm-12 footer-links">
+                    <strong>{{footer-link.title}}</strong>
+                    <ul class="list-group">
+                        {{#each footer-link.sub-links as |sub-link|}}
+                        <li class="footer-link-item">
+                            <a href={{sub-link.url}}>{{sub-link.title}}</a>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            {{/each}}
+
+            <div class="col-lg-3 col-md-3  col-sm-12 social-media-links">
+                {{#each @content.social-links as |social-link|}}
+                    <a href ="#">
+                        <i class={{concat "icon " social-link.icon}}></i>
+                    </a>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</footer>

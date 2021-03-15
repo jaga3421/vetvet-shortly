@@ -1,0 +1,7 @@
+<button 
+    class={{concat "btn btn-" @classList (if @loading ' loading')}}
+    disabled={{unless @enabled true}}  
+    {{on 'click' @submitUrl}}
+>
+    {{@label}}
+</button>

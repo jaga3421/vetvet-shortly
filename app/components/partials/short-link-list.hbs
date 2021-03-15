@@ -1,0 +1,40 @@
+<div class=" my-urls-wrapper">
+    <div class="container">
+        <!-- clear all -->
+        <div class="row">
+            <div class="col-sm-12">
+                <span class="clear-all" {{on 'click' @clearAllLinks}}>
+                    <i class="icon icon-trash" />
+                    Clear all links
+                </span>
+            </div>
+        </div>
+
+        <!-- links lsit -->
+        {{#each @links as |url|}}
+            <div class="row my-url colorFlash">
+                <div class="col-md-7 col-sm-12 text-truncate">
+                    {{url.original_link}}
+                    <a class="open-new" href={{url.original_link}} target="_blank">
+                        <i class="icon icon-external-link"></i>
+                    </a>  
+                </div>
+                <div class="col-md-3 col-sm-12 short-url text-truncate">
+                    {{url.full_short_link2}}
+                </div>
+                <div class="col-md-2 col-sm-12 copy-url">
+                    <Elem::CopyBtn @text={{url.full_short_link2}} />
+                </div>
+            </div>
+        {{/each}}
+
+        <!-- show more -->
+
+        {{!-- <div class="row">
+            <div class="col-sm-12 show-all" {{on 'click' @toggleShowAll}}>
+                <i class="icon icon-eye" />
+                {{#if @links.length 'hi'}}
+            </div>
+        </div> --}}
+    </div>
+</div>

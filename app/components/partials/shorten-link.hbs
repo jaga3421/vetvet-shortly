@@ -1,0 +1,37 @@
+ <!-- Link shortening -->
+<div class="container">
+    <div class="link-shorten">
+        <div class="input-area row">
+
+            <div class="col-lg-10  col-md-8 col-sm-12 pd-2">
+                <Elem::TextBox 
+                    @id = "shorten-url"
+                    @label = {{@content.shorten-link}}
+                    @class = "form-control"
+                    @error = {{this.error}}
+                    @errorClass = "form-text text-danger"
+                    @updateText = {{this.updateText}}
+                />
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-12 pd-2">
+                <Elem::Button 
+                    @label = {{@content.shorten-it}}
+                    @classList = "primary w-100"
+                    @loading = {{this.loading}}
+                    @enabled = {{this.inputLink.length}}
+                    @submitUrl = {{this.submitUrl}}
+                />
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- show links list if present -->
+{{#if this.myUrls.length}}
+
+    <Partials::ShortLinkList 
+        @links = {{this.myUrls}} 
+        @clearAllLinks = {{this.clearAllLinks}}
+    />
+{{/if}}

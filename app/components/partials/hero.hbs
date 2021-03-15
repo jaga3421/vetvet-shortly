@@ -1,0 +1,25 @@
+<!-- Hero component -->
+<div class="no-overflow-x">
+    <div class="hero-component container">
+        <div class="row">
+            <div class="col-sm-12 col-md-7">
+                <h1>
+                    {{@content.caption}}
+                </h1>
+                <p class="regular">
+                    {{@content.sub-text}}
+                </p>
+                <a href="#" class="btn-style lg">
+                    {{@content.get-started}}
+                </a>
+            </div>
+
+            <div class="col-sm-12 col-md-5">
+                <img class="hero-image" 
+                    src={{@content.featured-image}} 
+                    alt={{@content.hero-image-alt}} />
+            </div>
+        </div>
+
+    </div>
+</div>

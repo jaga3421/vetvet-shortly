@@ -1,0 +1,98 @@
+@include media-breakpoint-down(sm) {
+    h2 {
+        font-size: 1.2rem!important;
+    }
+    h1, h2, p, footer, .card {
+        text-align: center;
+    }
+    header {
+        margin-top: 20px;
+    }
+    .hero-component .row {
+        flex-direction: column-reverse;
+        overflow-x: hidden;
+        text-align: center;
+        padding-bottom: 20px;
+
+        .hero-image {
+            width: 90%;
+            position: relative;
+            left: 15%;
+            margin-top: 0;
+        }
+
+        h1 {
+            margin: 20px 0 10px;
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+        }
+    }
+
+    .link-shorten {
+        padding: 20px;
+        small {
+            position: relative;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        input,
+        button {
+            padding: 10px;
+            font-size: 0.8rem;
+        }
+        label {
+            left: 7%!important;
+            top: 16%!important;
+            font-size: 0.8rem!important;
+        }
+        .text-box.is-label-up {
+            label {
+                top: 5px!important;
+                left: 8%!important;
+                font-size: 0.5rem!important;
+            }
+        }
+    }
+
+    .advanced-statistics {
+        padding: 120px 0 80px;
+
+        .card {
+            margin-top: 80px!important;
+            .card-icon {
+                left: calc(50% - 43px);
+            }
+        }
+    }
+
+    .footer-link-item a {
+        font-size: 0.7rem;
+    }
+    .my-urls-wrapper {
+        div,
+        .short-url,
+        .copy-url {
+            text-align: center!important;
+        }
+        div {
+            padding: 5px 0;
+        }
+        .my-url {
+            margin: 10px 20px 0px!important;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .hero-component {
+        h1 {
+            font-size: 3rem;;
+        }
+    }
+
+    
+}

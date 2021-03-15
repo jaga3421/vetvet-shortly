@@ -1,0 +1,29 @@
+<div class = {{
+        concat 
+        "form-group text-box " 
+        (if this.isLabelUp "is-label-up") 
+        (if @error " has-errors") 
+    }}
+>
+    <label for = {{@id}} class = {{(if @error 'text-danger')}}>
+        {{@label}}
+    </label>
+
+    <Input
+        @id = {{@id}}
+        @type = "text"
+        @value = {{@value}}
+        @class = {{@classList}}
+
+        {{on 'focus' onFocus}}
+        {{on 'blur' onBlur}}
+        {{on 'keyup' @updateText}}
+        {{on 'input' @updateText}}
+    />
+
+    {{#if @error}}
+        <small class={{@errorClass}}>
+            {{@error}}
+        </small>
+    {{/if}}
+</div>

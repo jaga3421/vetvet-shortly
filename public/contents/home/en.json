@@ -1,0 +1,143 @@
+{
+    "title": "Shorten your links like never before",
+    "header": {
+        "main-nav": [
+            {
+                "name": "Features",
+                "url": "#"
+            },
+            {
+                "name": "Pricing",
+                "url": "#"
+            },
+            {
+                "name": "Resources",
+                "url": "#"
+            }
+        ],
+        "right-nav": [
+            {
+                "name": "Login",
+                "url": "#"
+            },
+            {
+                "name": "Sign Up",
+                "url": "#",
+                "style": "btn-style"
+            }        
+        ]
+    },
+    "shorten": {
+        "shorten-link": "Shortern a link here...",
+        "shorten-it": "Shorten it!"
+    },
+    "hero" : {
+        "caption": "More than just shorter links",
+        "sub-text": "Build your brand's recognition and get detailed insights on how your link is performing",
+        "get-started": "Get started",
+        "featured-image": "./images/illustration-working.svg",
+        "hero-image-alt": "Working Illustration"
+    },
+    "statistic": {
+        "caption": "Advanced Statistic",
+        "sub-text": "Track how links are performing across the web with our advanced statistics dashboard",
+        "cards": [
+            {
+                "title": "Brand Recognition",
+                "icon": "./images/icon-brand-recognition.svg",
+                "sub-text": "Boost your brand recognition with each click. Generic link doesn't mean a thing. Branded links help instil confidence in your content"
+            },
+            {
+                "title": "Detailed Statistics",
+                "icon": "./images/icon-detailed-records.svg",
+                "sub-text": "Gain insight into who is clicking your links. Knowing when and where people engage with your contents helps inform better decisions"
+            },
+            {
+                "title": "Fully Customizable",
+                "icon": "./images/icon-fully-customizable.svg",
+                "sub-text": "Improve brand awareness and content discoverability through customizable links, supercharging audience engagement"
+            }
+        ]
+    },
+    "footer": {
+        "boost-today": "Boost your links today",
+        "get-started": "Get started",
+        "footer-links": [
+            {
+                "title": "Features",
+                "sub-links": [
+                    {
+                        "title": "Link Shortening",
+                        "url": "#"
+                    },
+                    {
+                        "title": "Branded Links",
+                        "url": "#"
+                    },
+                    {
+                        "title": "Analytics",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "title": "Resources",
+                "sub-links": [
+                    {
+                        "title": "Blog",
+                        "url": "#"
+                    },
+                    {
+                        "title": "Developers",
+                        "url": "#"
+                    },
+                    {
+                        "title": "Support",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "title": "Company",
+                "sub-links": [
+                    {
+                        "title": "About",
+                        "url": "#"
+                    },
+                    {
+                        "title": "Our Team",
+                        "url": "#"
+                    },
+                    {
+                        "title": "Careers",
+                        "url": "#"
+                    },
+                    {
+                        "title": "Contact",
+                        "url": "#"
+                    }
+                ]
+            }
+        ],
+        "social-links": [
+            {
+                "icon": "icon-facebook",
+                "url": "#"
+            },
+            {
+                "icon": "icon-twitter",
+                "url": "#"
+            },
+            {
+                "icon": "icon-pinterest",
+                "url": "#"
+            },
+            {
+                "icon": "icon-instagram",
+                "url": "#"
+            }
+        ]
+    }
+   
+
+}
